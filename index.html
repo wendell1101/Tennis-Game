@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+    header{
+        box-shadow: 2px 2px 8px 2px #fff;
+    }
+    .game-title{
+        
+        text-shadow: 1px 2px #333;
+    }
+   .instructions-title{
+        font-size : 1.4rem;
+        color:yellow;
+   }
+   .instructions{
+       background:#6c757d;
+       height:200px;
+       box-shadow: 2px 3px 8px 2px #fff;
+   }
+   
+</style>
+<body class="bg-dark">
+    <header class="mb-5 bg-secondary p-3">
+        <h3  class="text-white text-center game-title">Tennis Game</h3>
+    </header>
+    <div class="row d-flex justify-content-center ">
+     
+        <div class="col-7 d-flex justify-content-center align-items-center "style="overflow-x:hidden;!important">
+            <canvas id="gameCanvas" width="800" height="600">
+            </canvas>
+        </div>
+        <div class="col-4 mt-5 instructions">
+            <p class="instructions-title">Mechanics:</p>
+            <p class="text-white">
+                *One player game, versus computer.
+                *Use the mouse to move the paddle.<br>
+                *You should score three points to win the game.
+            </p>
+        </div>
+        
+       
+    </div>
+    
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
